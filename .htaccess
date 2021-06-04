@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.meigo\.hopto\.org$ [NC]
+RewriteRule ^(.*)$ http://site.ru/$1 [R=301,L]
+</IfModule>
